@@ -2,171 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoFood</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-        header {
-            background-color: #ffffff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        header img {
-            max-width: 150px;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 5px 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #1a1a1a;
-            font-weight: bold;
-        }
-
-        .auth-buttons {
-            display: flex;
-            gap: 10px;
-            margin-left: 20px;
-        }
-
-        .auth-buttons .login {
-            background-color: #ccc;
-            color: black;
-        }
-
-        .auth-buttons .register {
-            background-color: #000;
-            color: white;
-        }
-
-        button {
-            background-color: #2d7a39;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px 0;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h1, h2, h3 {
-            color: #2d7a39;
-        }
-
-        section {
-            margin-bottom: 30px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
-        footer nav ul {
-            flex-wrap: wrap;
-        }
-
-        footer nav ul li a {
-            color: #ccc;
-        }
-
-        @media (max-width: 600px) {
-            nav ul {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
-        <img src="assets/logo.png" alt="EcoFood Logo">
-        <nav>
-            <ul>
-                <li><a href="#">¿Quiénes Somos?</a></li>
-                <li><a href="#">Misión</a></li>
-                <li><a href="#">Visión</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="login">Login</button>
-                <button class="register">Register</button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="EcoFood Logo" width="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">¿Quiénes Somos?</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">Misión</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">Visión</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold" href="#">FAQ</a></li>
+                    </ul>
+                    <div class="auth-buttons d-flex gap-2">
+                        <button class="login btn">Login</button>
+                        <button class="register btn">Register</button>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-
-        <h1>Ecofood</h1>
-        <p>EcoFood es un startup chileno cuyo objetivo es reducir el desperdicio de alimentos. Conecta restaurantes, supermercados y pequeños productores que tienen excedentes de comida con consumidores que desean adquirirlos a precios reducidos. La plataforma ofrece información sobre impacto ambiental y fomenta hábitos de consumo responsables.</p>
-        <button>Únete Ahora</button>
-
-        <section>
-          <ul>
+    <div class="container-fluid parte1" >
+        <div class="text-center" style="padding-top: 152px;">
+            <h1 class="fw-bold">EcoFood</h1>
+            <p class="lead">EcoFood es un startup chileno cuyo objetivo es reducir el desperdicio de alimentos.
+                            Conecta restaurantes, supermercados y pequeños productores que tienen excedentes de comida con consumidores que desean adquirirlos a precios reducidos.
+                            La plataforma ofrece información sobre impacto ambiental y fomenta hábitos de consumo responsables.</p>
+            <button class="btn btn-success">Únete Ahora</button>
+        </div>
+    </div>
+    <div class="container-fluid parte2" >
+        <div class="text-center p-5">
             <h2>¡El desperdicio de alimentos nos está pasando la cuenta!</h2>
-            <p><li>1 de cada 3 alimentos en el mundo termina en la basura</li></p>
-            <p><li>En América Latina y el Caribe, se pierden 127 millones de toneladas, casi el 20% de lo que se produce.</li></p>
-            <p><strong>¿Por qué se desperdicia tanto?</strong></p>
-            <p><li>Mala planificación</li></p>
-            <p><li>Almacenamiento inadecuado</li></p>
-            <p><li>Confusión con fechas de vencimiento</li></p>
-          </ul>
-          </section>
-
-        <section>
-            <h3>¿Por qué se desperdicia tanto?</h3>
             <ul>
+                <li>1 de cada 3 alimentos en el mundo termina en la basura</li>
+                <li>En América Latina y el Caribe, se pierden 127 millones de toneladas, casi el 20% de lo que se produce.</li>
+                <li>¿Por qué se desperdicia tanto?</li>
                 <li>Mala planificación</li>
                 <li>Almacenamiento inadecuado</li>
                 <li>Confusión con fechas de vencimiento</li>
             </ul>
-            <p><strong>Se pierden 1.300 millones de toneladas de comida al año.</strong></p>
-        </section>
+        </div>
+    </div>
 
-        <section>
+
+    <main class="container-fluid">
+
+        <section class="sabiasque">
             <h3>¿Sabías Que?</h3>
             <ul>
                 <li>Se desperdicia el 20% del agua utilizada en agricultura por alimentos no consumidos.</li>
@@ -174,8 +69,8 @@
             </ul>
         </section>
 
-        <section>
-            <h2>¡Descarga nuestra Guía para Reducir el Desperdicio Alimentario!</h2>
+        <section class="guia">
+            <h2><strong>¡Descarga nuestra Guía para Reducir el Desperdicio Alimentario!</strong></h2>
             <p>Aprende acciones simples para marcar la diferencia desde tu hogar, escuela o negocio.</p>
             <ul>
                 <li>Consejos de almacenamiento</li>
@@ -183,24 +78,50 @@
                 <li>Ideas para reutilizar sobras</li>
                 <li>Planificación inteligente de compras</li>
             </ul>
-            <button>Descarga Guía</button>
+            <button class="btn btn-success">Descarga Guía</button>
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Best practices</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Developers</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Prototyping</a></li>
-                <li><a href="#">Design systems</a></li>
-                <li><a href="#">FigJam</a></li>
-            </ul>
-        </nav>
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="text-body-secondary">© 2025 EcoFood</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">Features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white-50">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes Sociales</h5>
+                    <div class="card bg-light text-dark" style="width: 18rem;">
+                        <img src="assets/img/rs.png" class="card-img-top" alt="redes sociales">
+                        <div class="card-body">
+                            <p class="card-text">Síguenos para más tips y novedades sobre el desperdicio alimentario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

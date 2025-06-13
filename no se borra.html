@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoFood</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #e5ce22;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            max-width: 50px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .auth-buttons .login {
+            background-color: #ccc;
+            color: black;
+        }
+
+        .auth-buttons .register {
+            background-color: #000;
+            color: white;
+        }
+
+        button {
+            background-color: #2d7a39;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #2d7a39;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: rgb(246, 242, 186);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        footer nav ul {
+            flex-wrap: wrap;
+        }
+
+        footer nav ul li a {
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="EcoFood Logo">
+        <nav>
+            <ul>
+                <li><a href="#">¿Quiénes Somos?</a></li>
+                <li><a href="#">Misión</a></li>
+                <li><a href="#">Visión</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+        </nav>
+    </header>
+
+        <h1>Ecofood</h1>
+        <p>EcoFood es un startup chileno cuyo objetivo es reducir el desperdicio de alimentos. Conecta restaurantes, supermercados y pequeños productores que tienen excedentes de comida con consumidores que desean adquirirlos a precios reducidos. La plataforma ofrece información sobre impacto ambiental y fomenta hábitos de consumo responsables.</p>
+        <button>Únete Ahora</button>
+
+        <section>
+          <ul>
+            <h2>¡El desperdicio de alimentos nos está pasando la cuenta!</h2>
+            <p><li>1 de cada 3 alimentos en el mundo termina en la basura</li></p>
+            <p><li>En América Latina y el Caribe, se pierden 127 millones de toneladas, casi el 20% de lo que se produce.</li></p>
+            <p><strong>¿Por qué se desperdicia tanto?</strong></p>
+            <p><li>Mala planificación</li></p>
+            <p><li>Almacenamiento inadecuado</li></p>
+            <p><li>Confusión con fechas de vencimiento</li></p>
+          </ul>
+          </section>
+
+        <section>
+            <h3>¿Por qué se desperdicia tanto?</h3>
+            <ul>
+                <li>Mala planificación</li>
+                <li>Almacenamiento inadecuado</li>
+                <li>Confusión con fechas de vencimiento</li>
+            </ul>
+            <p><strong>Se pierden 1.300 millones de toneladas de comida al año.</strong></p>
+        </section>
+
+        <section>
+            <h3>¿Sabías Que?</h3>
+            <ul>
+                <li>Se desperdicia el 20% del agua utilizada en agricultura por alimentos no consumidos.</li>
+                <li>1/3 de los alimentos producidos en el mundo se desperdicia.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>¡Descarga nuestra Guía para Reducir el Desperdicio Alimentario!</h2>
+            <p>Aprende acciones simples para marcar la diferencia desde tu hogar, escuela o negocio.</p>
+            <ul>
+                <li>Consejos de almacenamiento</li>
+                <li>Cómo interpretar fechas de caducidad</li>
+                <li>Ideas para reutilizar sobras</li>
+                <li>Planificación inteligente de compras</li>
+            </ul>
+            <button>Descarga Guía</button>
+        </section>
+    </main>
+
+    <div class="container"> 
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap">
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-body-secondary">© 2025</p>
+        </div>
+        <div class="col mb-3"></div>
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+             <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+            </ul> </div> <div class="col mb-3">
+            <h5>Section</h5> <ul class="nav flex-column"> 
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                </li> 
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                </li> 
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+                </li> 
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                </li> </ul> </div> <div class="col mb-3"> <h5>Section</h5> <ul class="nav flex-column"> 
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li> <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li> </ul> </div> </footer> </div>
+</body>
+</html>
+
+<div class="card" style="width: 18rem;">
+  <img src="assets/rs.png" class="" alt="redes sociales">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  </div>
+</div>
